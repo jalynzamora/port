@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<script type="text/javascript">
+		function add(){
+			var num1 = document.getElementById('input1').value;
+			var num2 = document.getElementById('input2').value;
+			const resultBox = document.getElementById('result');
+			resultBox.innerHTML = parseFloat(num1) + parseFloat(num2);
+		}
+	function divide(){
+			var num1 = document.getElementById('input1').value;
+			var num2 = document.getElementById('input2').value;
+			const resultBox = document.getElementById('result');
+		if(num2 !== '0'){
+			resultBox.innerHTML = parseFloat(num1) / parseFloat(num2);
+		}
+		else{
+			resultBox.innerHTML = "Divide by zero"
+		}
+		}
+	</script>
+</head>
+
+<body>
+<div class="simpleCalcBody">
+<div>
+<input type="text" id="input1">
+<input type="text" id="input2">
+	</div>
+<button id="plusButton" onClick="add()">+</button>
+<button id="divButton" onClick="divide()">/</button>
+Results:
+<span id="result"></span>
+	</div>
+</body>
+
+</html>
