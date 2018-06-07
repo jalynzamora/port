@@ -1,4 +1,3 @@
-$("#go").click(addImage);
 
 function addImage(e) {
   var imgUrl = $("#imgUrl").val();
@@ -8,6 +7,7 @@ function addImage(e) {
   e.preventDefault();
 }
 
+$("#go").click(addImage);
 $("#urlBox").submit(addImage);
 
 
