@@ -6,8 +6,9 @@ function addImage(e) {
   }
   e.preventDefault();
 }
-
+$("#go").click(addImage);
 $("#urlBox").submit(addImage);
+
 
 function gray() {
 	document.getElementById("myImg").style.filter = "grayscale(100%)";
