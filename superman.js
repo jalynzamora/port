@@ -1,3 +1,4 @@
+<script>
 const superman ={
 	name: 'Superman',
 	'real name': 'Clark Kent',
@@ -21,3 +22,4 @@ superman['name']
 superman["real" + " " + "name"] //the property is built using string concatenation
 //<< "Clark Kent"
 
+</script>

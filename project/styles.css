@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Roboto+Slab');
+
+* {
+	box-sizing: border-box;
+}
+
+body{
+	text-align:center;
+	background:#F7F7F7;
+	font-family: 'Roboto Slab', serif;
+}
+canvas{
+	border:#666 solid 1px;
+}
+h1{
+	font-family: 'Bowlby One SC', cursive;
+	color:#F31D64;
+}
+h3{
+	font-family: 'Bowlby One SC', cursive;
+	display:inline-block;
+}
+button{
+	text-decoration:none;
+	color:#7B62A6;
+	font-family: 'Roboto Slab', serif;
+}
+button:hover{
+	color:#F31D64;
+}
+nav{
+	border:solid 1px #DDD;
+	display:inline-block;
+}
+nav ul id{
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+nav li{ display:inline-block; }
+nav button{
+	display:inline-block;
+	padding:5px 15px;
+}
+nav a:hover{
+	background:#efefef;
+}
+
+article img {
+	width: 100%;
+}
+
+@media screen and (min-width: 50em){
+	article img {
+		width: 50%;
+	}
+}
+
+.url-box {
+  background-color: transparent;
+  display: inline-block;
+  height: 30px;
+  border: none;
+  border-bottom: 4px solid #b3b3b1;
+  padding: 0px 0px 0px 20px;
+  margin: 0px 0px;
+  width: 50%;
+  outline: none;
+  text-align: center;
+  font-size: 15px;
+  font-family: monospace;
+  font-weight: 100;
+  color: #000;
+}

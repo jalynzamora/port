@@ -1,13 +1,37 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="eng">
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Project Folder</title>
+	<link href="styles.css" rel="stylesheet">
+	<title>Photo Editing App</title>
 </head>
-
 <body>
-<p>Hello World!</p>
+	<h1>Add an Image Filter</h1>
+<form id="urlBox" class="center">
+  <input class="url-box" type="url" id="imgUrl" placeholder="Paste any image link and start playing!">
+</form>
 
+	<h3>Filters: </h3>
+	<nav>
+		<ul id="filters">
+			<li><button onclick="gray()">Grayscale</button></li>
+			<li><button onclick="sepia()">Sepia</button></li>
+			<li><button onclick="opacity()">Opacity</button></li>
+			<li><button onclick="sat()">Saturate</button></li>
+			<li><button onclick="invert()">Invert</button></li>
+			<li><button onclick="blurr()">Blur</button></li>
+			<li><button onclick="no()">None</button></li>
+		</ul>
+		<article>
+		<div id="MyImg" class="center">
+			<img id="myImg" src="almonds-berries-blackberries-1099680.jpg" alt="Fruit Bowl" />
+			</div>
+		</article>
+	</nav>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="filters.js"></script>
 </body>
+
 </html>
